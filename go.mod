@@ -2,10 +2,8 @@ module bitbucket.org/vintikzzzz/torrent-web-seeder
 
 require (
 	bitbucket.org/vintikzzzz/common-services v0.0.0-20191111202001-ca1f4dc23375
-	bitbucket.org/vintikzzzz/content-error v0.0.0-20190715184448-61e5a4b8e131 // indirect
 	bitbucket.org/vintikzzzz/gracenet v0.0.0-20190918171651-f153b4f61742
 	bitbucket.org/vintikzzzz/torrent-store v0.0.0-20190112143613-8dd8b58f22d3
-	bitbucket.org/vintikzzzz/video-info v0.0.0-20191126215428-9ef96d755025 // indirect
 	cloud.google.com/go v0.45.1 // indirect
 	code.cloudfoundry.org/bytefmt v0.0.0-20180906201452-2aa6f33b730c
 	github.com/AndreasBriese/bbloom v0.0.0-20190825152654-46b345b51c96 // indirect
@@ -90,3 +88,9 @@ require (
 )
 
 go 1.13
+
+replace bitbucket.org/vintikzzzz/common-services v0.0.0-20191111202001-ca1f4dc23375 => ./vendor/bitbucket.org/vintikzzzz/common-services
+
+replace bitbucket.org/vintikzzzz/gracenet v0.0.0-20190918171651-f153b4f61742 => ./vendor/bitbucket.org/vintikzzzz/gracenet
+
+replace bitbucket.org/vintikzzzz/torrent-store v0.0.0-20190112143613-8dd8b58f22d3 => ./vendor/bitbucket.org/vintikzzzz/torrent-store
